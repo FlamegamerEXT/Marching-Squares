@@ -1,14 +1,14 @@
-int MAX_STEP = 100, step = 0, RES = 3;
+int step = 0, RES = 3;
 float THRESHOLD_VALUE = 0.5, PERLIN_SCALE = 0.015;
 
 void setup(){
   size(960, 600);
   noStroke();
+  fill(55, 200, 55);
 }
 
 void draw(){
   clear();
-  fill(55, 55, 200);
   // Draw each square
   for (int y = 0; y <= height-RES; y+=RES){
     for (int x = 0; x <= width-RES; x+=RES){
